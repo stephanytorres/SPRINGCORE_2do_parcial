@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Agregar título a la página -->
+        <title>Vestidos - Springcore Shop</title>
+        <meta title="Springcore shop">
+
+        <!-- Codificación de Caracteres del Texto -->
+        <meta charset="utf-8">
+
+        <!-- Agregar ícono de favoritos -->
+        <link rel="icon" href="img/favicon.png">
+        
+        <!-- Meta que permite la correcta visualización en Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Cargar librerías de Íconos Web > Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- Cargar PrefixFree  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <!-- Cargar Tipógrafía Web > Google Fonts  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Enlazar a archivo externo CSS > estilo.css -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <!-- Componente Botón WhatsApp flotante -->
+        <aside id="boton-wp">
+            <a href="https://api.whatsapp.com/send?phone=573043339363" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </aside>
+
+        <!-- Componente Menú Responsive -->
+        <aside id="menu-moviles">
+            <a href="#" id="abrir-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a href="#" id="cerrar-menu">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="accesorios.html">Accesorios</a>
+                <a href="vestidos.html">Vestidos</a>
+                <a href="zapatos.html">Zapatos</a>
+            </nav>
+        </aside>
+
+        <!-- Componente header con Logo y Menú al centro -->
+        <header>
+            <article>
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Landing Page - 1er corte">
+                    </a>
+                </figure>
+            </article>
+        </header>
+
+
+        <main>
+            <section id="banner-superior">
+                <article>
+                    <h1>Vestidos</h1>
+                </article>
+            </section>
+
+            <section class="bloque-producto">
+                <article>
+                    <nav>
+                        <a href="vestidos-vestidogarden.html">
+                            <span class="nombre-producto">Vestido Garden</span>
+                            <span class="precio-producto">$155.000</span>
+                            <img src="img/miniatura vestido garden.png">
+                        </a>
+
+                        <a href="vestidos-vestidocottage.html">
+                            <span class="nombre-producto">Vestido Cottage</span>
+                            <span class="precio-producto">$150.000</span>
+                            <img src="img/miniatura vestido cottage.png">
+                        </a>
+                    </nav>
+                </article>
+            </section>
+
+            <section id="menu-categorias-2-col">
+                <article>
+                    <nav>
+                        <a href="accesorios.html" id="accesorios-fondo">
+                            <span class="nombre-categoria">Accesorios</span>
+                            <span class="capa-oscura"></span>
+                        </a>
+
+                        <a href="zapatos.html" id="zapatos-fondo">
+                            <span class="nombre-categoria">Zapatos</span>
+                            <span class="capa-oscura"></span>
+                        </a>
+                    </nav>
+                </article>
+            </section>
+        </main>
+
+
+        <!-- Componente Footer con 4 columnas -->
+        <footer>
+            <article>
+                <div id="inferior-footer">
+                    <p>SPRINGCORE SHOP</p>
+                </div>
+            </article>
+        </footer>
+
+
+        <!-- Zona de Scripts -->
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- 2°: Llamado a librerías hijo de jQuery -->
+        <!-- jQuery Easing desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+       <!--  Llamado a Slick Slider -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- Enlazar a archivo externo JS > script.js -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

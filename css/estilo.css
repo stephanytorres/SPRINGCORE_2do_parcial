@@ -1,0 +1,230 @@
+/* PATRONES GLOBALES DE CSS  */
+
+/* Tipografía principal */
+h1, h2, h3, a, button { font-family: 'EB Garamond', serif; }
+
+/* Tipografía secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'EB Garamond', serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen por defecto varias etiquetas de HTML5 */
+body, h1, h2, h3, h4, h5, h6, p, figure, img { margin: 0; overflow-x: hidden; }
+
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width: 45px; height: 45px; margin: 0; float: none; position: fixed; right: 15px; bottom: 15px; z-index: 99998; }
+aside#boton-wp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; background: #8d8e52; border-radius: 50%; text-align: center; padding: 10px 0; transition: all 0.3s ease-in; }
+aside#boton-wp a i { font-size: 1.5em; line-height: 1em; color: #fff; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover { background: #000; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover i { color: #8d8e52; transition: all 0.3s ease-in; }
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: #ffffff; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -55px; display: block; text-decoration: none; color: #d8ae98; background: #f3114d00; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { background: #220a5d00; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -55px; display: none; text-decoration: none; color: #d8ae98; background: #f3114d00; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { background: #220a5d00; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #d8ae98; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #717967; transition: all 0.3s ease-in; }
+
+
+/* Componente header con Logo y Menú */
+header { width: 100%; height: 105px; margin: 0; float: none; position: fixed; left: 0; top: 0; z-index: 99990; background: #ffffff00; }
+header article { width: 1100px; height: 105px; margin: 0 auto; float: none; position: relative; }
+
+header article figure { width: 1200px; height: 105px; margin: 0; float: left; position: relative; top: 10px; }
+header article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+header article figure a img { width: auto; height: 100px; margin: 0 auto; float: none; position: relative; display: block; }
+
+
+/* Caja Main */
+main { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#banner-superior { width: 100%; height: 400px; margin: 0 0 80px 0; float: none; position: relative; background: url('../img/FONDO\ TITULOS\ PRODUCTOS.png') no-repeat bottom center; background-size: cover; }
+main section#banner-superior article { width: 100%; height: 400px; margin: 0 auto; float: none; position: relative; }
+main section#banner-superior article h1 { width: 100%; height: auto; display: block; float: none; position: absolute; text-align: center; font-size: 4.125em; letter-spacing: 0.25em; padding: 157px 12px; font-weight: 500; color: #ffffff; text-shadow: 0 1px 13px #000; }
+
+
+/* Slick Slider */
+main section#zona-slider { width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative; }
+main section#zona-slider article.slick-slider { width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative; }
+
+main section#zona-slider article.slick-slider figure#slide-02 { width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url('../img/2.\ VESTIDO.png') no-repeat top center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-01 { width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url('../img/1.\ GIRASOL.png') no-repeat top center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-03 { width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url('../img/3.\ ZAPATOS.png') no-repeat top center; background-size: cover; }
+
+main section#zona-slider article.slick-slider figure#slide-02 h3 { width: 100%; height: auto; margin: 0 0 0 3%; display: block; float: none; position: absolute; text-align: center; font-size: 4.125em; letter-spacing: 0.25em; bottom: 63%; font-weight: 500; color: #ffffff; text-shadow: 0 1px 13px #000; }
+main section#zona-slider article.slick-slider figure#slide-02 a { width: 75px; height: auto; float: none; margin: 20% 50% 20% 50%; position: relative; display: block; text-decoration: none; color: #ffffff; background: #717967; font-weight: 600; font-size: 1.25em; line-height: 1em; text-align: center; padding: 12px 22px; border-radius: 20px; transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-02 a:hover { color: #717967; background: #d8ae98; transition: all 0.3s ease-in; }
+
+main section#zona-slider article.slick-slider figure#slide-01 h3 { width: 100%; height: auto; margin: 0 0 0 3%; display: block; float: none; position: absolute; text-align: center; font-size: 4.125em; letter-spacing: 0.25em; bottom: 63%; font-weight: 500; color: #ffffff; text-shadow: 0 1px 13px #000; }
+main section#zona-slider article.slick-slider figure#slide-01 a { width: 75px; height: auto; float: none; margin: 20% 50% 20% 50%; position: relative; display: block; text-decoration: none; color: #ffffff; background: #717967; font-weight: 600; font-size: 1.25em; line-height: 1em; text-align: center; padding: 12px 22px; border-radius: 20px; transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-01 a:hover { color: #717967; background: #d8ae98; transition: all 0.3s ease-in; }
+
+main section#zona-slider article.slick-slider figure#slide-03 h3 { width: 100%; height: auto; margin: 0 0 0 3%; display: block; float: none; position: absolute; text-align: center; font-size: 4.125em; letter-spacing: 0.25em; bottom: 63%; font-weight: 500; color: #ffffff; text-shadow: 0 1px 13px #000; }
+main section#zona-slider article.slick-slider figure#slide-03 a { width: 75px; height: auto; float: none; margin: 20% 50% 20% 50%; position: relative; display: block; text-decoration: none; color: #ffffff; background: #717967; font-weight: 600; font-size: 1.25em; line-height: 1em; text-align: center; padding: 12px 22px; border-radius: 20px; transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-03 a:hover { color: #717967; background: #d8ae98; transition: all 0.3s ease-in; }
+
+.slick-prev { left: 25px !important; z-index: 9 !important; }
+.slick-next { right: 25px !important; z-index: 10 !important; }
+
+
+
+/* Bloque 2 productos */
+main section.bloque-producto { width: 100%; height: auto; margin: 0 auto 70px; float: none; position: relative; }
+main section.bloque-producto article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-producto article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.01em; padding: 0 12px; font-weight: 500; color: #d8ae98; }
+main section.bloque-producto article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-producto article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-producto article nav a span.nombre-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.01em; padding: 0 12px; font-weight: 500; color: #ffffff; text-shadow: 0 1px 7px #000; transition: all 0.3s ease-in; }
+main section.bloque-producto article nav a span.precio-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 40px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.01em; padding: 0 12px; font-weight: 300; color: #ffffff; text-shadow: 0 1px 7px #000; transition: all 0.3s ease-in; }
+main section.bloque-producto article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-producto article nav a:hover { transition: all 0.3s ease-in;}
+main section.bloque-producto article nav a:hover span.nombre-producto { color: #5f6653; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-producto article nav a:hover span.precio-producto { color: #5f6653; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-producto article nav a:hover img { opacity: 0.5; transition: all 0.3s ease-in; }
+
+
+
+/* Bloque 3 categorias */
+main section#menu-categorias-3-col { width: 100%; height: auto; margin: 35px auto 130px; float: none; position: relative; }
+main section#menu-categorias-3-col nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#menu-categorias-3-col nav a { width: 31%; height: 500px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#menu-categorias-3-col nav a#accesorios-fondo { background: url('../img/Portada\ Accesorios.jpg') no-repeat bottom center; background-size: cover; }
+main section#menu-categorias-3-col nav a#vestidos-fondo { background: url('../img/Portada\ Vestidos.jpg') no-repeat top center; background-size: cover; }
+main section#menu-categorias-3-col nav a#zapatos-fondo { background: url('../img/Portada\ zapatos.jpg') no-repeat top center; background-size: cover; }
+
+main section#menu-categorias-3-col nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; font-size: 3.125em; line-height: 1em; letter-spacing: 0.1em; padding: 225px 12px; font-weight: 100; color: #ffffff; text-align: center; transition: all 0.3s ease-in; }
+main section#menu-categorias-3-col nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 34%); transition: all 0.3s ease-in; }
+
+main section#menu-categorias-3-col nav a:hover span.nombre-categoria { letter-spacing: 0.35em; color: #ffffff; text-align: center; transition: all 0.3s ease-in; }
+main section#menu-categorias-3-col nav a:hover span.capa-oscura { background: #3b442cb0; transition: all 0.3s ease-in; }
+
+
+/* Bloque 2 categorias */
+main section#menu-categorias-2-col { width: 100%; height: auto; margin: 35px auto 70px; float: none; position: relative; padding: 85px 0 23px; }
+main section#menu-categorias-2-col article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#menu-categorias-2-col article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#menu-categorias-2-col article nav a { width: 48%; height: 500px; margin: 10px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#menu-categorias-2-col article nav a#accesorios-fondo { background: url('../img/Portada\ Accesorios.jpg') no-repeat bottom center; background-size: cover; }
+main section#menu-categorias-2-col article nav a#vestidos-fondo { background: url('../img/Portada\ Vestidos.jpg') no-repeat top center; background-size: cover; }
+main section#menu-categorias-2-col article nav a#zapatos-fondo { background: url('../img/Portada\ zapatos.jpg') no-repeat top center; background-size: cover; }
+
+main section#menu-categorias-2-col article nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; font-size: 3.125em; line-height: 1em; letter-spacing: 0.1em; padding: 225px 0; font-weight: 100; color: #ffffff; text-align: center; transition: all 0.3s ease-in; }
+main section#menu-categorias-2-col nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 34%); transition: all 0.3s ease-in; }
+
+main section#menu-categorias-2-col article nav a:hover span.nombre-categoria { letter-spacing: 0.35em; color: #ffffff; text-align: center; transition: all 0.3s ease-in; }
+main section#menu-categorias-2-col article nav a:hover span.capa-oscura { background: #3b442cb0; transition: all 0.3s ease-in; }
+
+
+/* Ficha producto */
+main section#ficha-producto { width: 100%; height: auto; margin: 0 auto 145px; float: none; position: relative; }
+
+main section#ficha-producto article { width: 1100px; height: 520px; margin: 0 auto; float: none; position: relative; }
+main section#ficha-producto article figure { width: 520px; height: 520px; margin: 0 auto; float: left; position: relative; }
+main section#ficha-producto article figure img { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+
+main section#ficha-producto article div#info-producto { width: 480px; height: 520px; margin: 0; float: right; position: relative; }
+main section#ficha-producto article div#info-producto h2 { color: #d8ae98; font-weight: 650; font-size: 2.25em; text-align: left; padding: 65px 0 20px; }
+main section#ficha-producto article div#info-producto p { color: #333; font-weight: 400; font-size: 1.45em; text-align: left; padding: 0 52px 30px 0; }
+main section#ficha-producto article div#info-producto h5 { color: #333; font-weight: 800; font-size: 1.45em; text-align: left; padding: 0 52px 30px 0; }
+
+main section#ficha-producto article div#info-producto a { width: 120px; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: #ffffff; background: #717967; font-weight: 600; font-size: 1.25em; text-align: center; padding: 12px 12px; border-radius: 25px; transition: all 0.3s ease-in; }
+main section#ficha-producto article div#info-producto a:hover { padding: 12px 25px; color: #717967; background: #d8ae98; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Footer */
+footer { width: 100%; height: 200px; margin: 0 auto; float: none; position: relative; background: url('../img/FONDO\ TITULOS\ PRODUCTOS.png') no-repeat bottom center; background-size: cover; }
+footer article { width: 40%; height: 200px; margin: 0 auto; float: none; position: relative; background-size: cover; }
+footer article div#inferior-footer { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+footer article div#inferior-footer p { width: auto; height: auto; margin: 0; float: none; position: relative; color: #ffffff; font-weight: 600; font-size: 2em; line-height: 1.35em; text-align: center; padding: 77px 12px; letter-spacing: 0.25em; text-shadow: 0 1px 13px #000; }
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article figure { width: 40%; float: none; }
+
+
+    aside#menu-moviles { display: block; }
+
+    main section#banner-superior article h1 { text-align: center; font-size: 3.25em; padding: 20% 12px; font-weight: 500; color: #fff; }
+
+    main section#zona-slider { height: 50vh; }
+    main section#zona-slider article.slick-slider { height: 50vh; }
+    main section#zona-slider article.slick-slider figure#slide-01 { height: 50vh; }
+    main section#zona-slider article.slick-slider figure#slide-02 { height: 50vh; }
+    main section#zona-slider article.slick-slider figure#slide-03 { height: 50vh; }
+
+    main section#zona-slider article.slick-slider figure#slide-02 h3 { text-align: center; font-size: 4em; bottom: 40%; }
+    main section#zona-slider article.slick-slider figure#slide-02 a { bottom: -40%; }
+    main section#zona-slider article.slick-slider figure#slide-01 h3 { text-align: center; font-size: 4em; bottom: 40%; }
+    main section#zona-slider article.slick-slider figure#slide-01 a { bottom: -40%; }
+    main section#zona-slider article.slick-slider figure#slide-03 h3 { text-align: center; font-size: 4em; bottom: 40%; }
+    main section#zona-slider article.slick-slider figure#slide-03 a { bottom: -40%; }
+    
+
+    main section.bloque-producto article h3 { text-align: center; padding: 0 12px 10px 12px; }
+
+    main section.bloque-producto article { width: 80%; }
+    main section.bloque-producto article nav a { width: 100%; height: 286px; margin: 0 auto 25px; display: block; overflow: hidden; }
+    main section.bloque-producto article nav a img { width: auto; height: 100%; }
+    
+    main section#menu-categorias-3-col nav a { width: 93%; margin: 4% auto; display: block; }
+
+
+    main section#menu-categorias-2-col article { width: 80%; }
+    main section#menu-categorias-2-col article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+    main section#menu-categorias-2-col article nav a { width: 100%; height: 286px; margin: 0 auto 25px; display: block; overflow: hidden; }
+
+    main section#menu-categorias-2-col article nav a#accesorios-fondo { height: 470px; }
+    main section#menu-categorias-2-col article nav a#vestidos-fondo { height: 470px; }
+    main section#menu-categorias-2-col article nav a#zapatos-fondo { height: 470px; }
+
+
+
+    main section#ficha-producto { height: auto; }
+
+    main section#ficha-producto article { width: 80%; height: auto; }
+    main section#ficha-producto article figure { width: 100%; height: 370px; margin: 0 auto; float: none; }
+    main section#ficha-producto article figure img { width: auto; height: 300px; top: 45px }
+
+    main section#ficha-producto article div#info-producto { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#ficha-producto article div#info-producto h2 { text-align: center; }
+    main section#ficha-producto article div#info-producto p { text-align: center; margin: 0 auto; float: none; padding: 0 0 15px; }
+    main section#ficha-producto article div#info-producto h5 { padding: 0 0 20px 0; text-align: center; }
+
+    main section#ficha-producto article div#info-producto a { width: 150px; margin: 10px auto 0 auto; float: none; text-align: center; }
+
+
+    footer { overflow: hidden; }
+    footer article { width: 60%; }
+
+}
+
+@media only screen and (max-width: 899px){
+ 
+}
+
+/* Ajustes para Móviles */
+@media only screen and (max-width: 499px){
+
+}
+
+@media only screen and (max-width: 399px){
+    
+}
